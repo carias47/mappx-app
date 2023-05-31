@@ -1,0 +1,7 @@
+app-menu{
+    position: fixed;
+    bottom: 55px;
+    left: 20px;
+    z-index: 99999;
+
+}

@@ -1,0 +1,9 @@
+<ul class="nav nav-pills justify-content-center fixed-bottom">
+  <li
+    *ngFor="let item of menuItems"
+    [routerLink]="[item.ruta]"
+    class="nav-item"
+  >
+    <a class="nav-link" routerLinkActive="active">{{ item.nombre }}</a>
+  </li>
+</ul>

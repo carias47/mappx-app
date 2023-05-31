@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xl-3 col-lg-4 col-11 search-container">
+    <input
+      type="search"
+      class="form-control"
+      placeholder="Buscar Lugar..."
+      #txtQuery
+      (keyup)="changedQuery(txtQuery.value)"
+      [value]="valor"
+    />
+
+    <app-search-results
+      (valorGenerado)="capturarValor($event)"
+    ></app-search-results>
+  </div>
+</div>
